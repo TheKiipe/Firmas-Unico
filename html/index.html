@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CDN BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <script src="../js/funciones.js"></script>
+        <title>Firmas Unico</title>
+    </head>
+    <body>
+        <div class="plate">
+            <p class="script"><span>Tecnologia Unico</span></p>
+            <p class="shadow text1">Generador</p>
+            <p class="shadow text1">De</p>
+            <p class="shadow text1">Firmas</p>
+            <p class="script"><span>--by TheKiipe--</span></p>
+        </div>
+        <form action="" method="post" name="formulario" id="formulario">
+            <div class="container bordes">
+                <div class="form-group textos mx-auto">
+                    <label for="exampleInputEmail1">Nombre completo</label>
+                    <input required type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Escriba el nombre y el apellido del usuario">
+                </div>
+                <div class="form-group textos">
+                    <label for="exampleInputPassword1">Cargo</label>
+                    <input required type="text" class="form-control" id="cargo" name="cargo" placeholder="Escriba el cargo del usuario">
+                </div>
+                <div class="form-group textos">
+                    <label for="exampleInputPassword1">Correo corporativo</label>
+                    <input required type="text" class="form-control" id="mail" name="mail" placeholder="Escriba el correo corporativo del usuario">
+                </div>
+                <div class="form-group textos">
+                    <label for="exampleInputPassword1">Telefono</label>
+                    <input required type="text" class="form-control" id="telefono" name="telefono" placeholder="Escriba el numero telefonico del usuario">
+                    <small class="form-text text-muted">Escribir el numero telefonico sin el indicativo ni espacios</small>
+                </div>
+                <div class="form-group textos">
+                    <label for="exampleInputPassword1">Celular</label> &nbsp;
+                    <button type="button" class="btn btn-outline-danger" onclick="disablebox()" id="celularOff">El usuario no tiene celular</button>
+                    <button type="button" class="btn btn-outline-success" onclick="enablebox()" disabled="" id="celularOn">El usuario tiene celular</button>
+                    <input required type="text" class="form-control" id="celular" name="celular" placeholder="Escriba el numero celular del usuario" disable="">
+                </div>
+                <div class="form-group textos">
+                    <label for="exampleFormControlSelect1">Ciudad</label>
+                    <select class="form-control" id="exampleFormControlSelect1" name="ciudad">
+                        <option disabled selected>Selecciones la ciudad del usuario</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Dosquebradas">Dosquebradas</option>
+                        <option value="Neiva">Neiva</option>
+                        <option value="Pasto">Pasto</option>
+                        <option value="Villavicencio">Villavicencio</option>
+                        <option value="Yumbo">Yumbo</option>
+                    </select>
+                </div>
+                <div >
+                    <button type="submit" class="btn btn-danger botones" onclick="changeFormU()" id="btnUnico" name="btnUnico">Crear firma de Unico</button>
+                    <button type="submit" class="btn btn-primary botones" onclick="changeFormF()" id="btnFundacion" name="btnFundacion">Crear firma de Fundacion</button>
+                </div>
+            </div>
+        </form>
+    </body>
+  </html>
+
+  
